@@ -156,7 +156,7 @@ int main(){
             }
             wrefresh(win);
             usleep(200000);  
-            // If the snake hits an edge end the game
+            // If the snake hits an edge, end the game
             if(snakearr[4].xloc == xMax || snakearr[4].yloc == yMax || snakearr[4].xloc == 0 || snakearr[4].yloc == 0) {
                 mvwprintw(win, yMax/2, xMax/2, "I hope you're better at driving than you are at the snake game.");
                 usleep(200000);
